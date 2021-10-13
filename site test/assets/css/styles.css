@@ -1,0 +1,35 @@
+.col-auto.col-sm-8.col-md-6.col-lg-6.col-xl-4.item {
+  box-shadow: 5px 10px 18px #dedede;
+	background: #c8c6ea;
+}
+
+.navigation-clean .navbar-brand {
+  	color: #6351e7;
+}
+.twichbtn{
+	margin-top:50px;
+}
+
+.btnown {
+	border-radius: 15px;
+	border-width:  0px;
+	background-color: #0d0d0d;
+	color: #F07722;
+	font-weight: bold;
+}
+
+.btnown:hover{
+	background-color: #6cf560;
+	color: #0d0d0d;
+}
+footer{
+	position:fixed;
+	left:0px;
+	bottom: 20px;
+	height:30px;
+	width:100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+}

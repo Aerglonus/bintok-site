@@ -1,0 +1,28 @@
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<!-- item will be appened to this layout -->
+
+<div id="log" class="sl__chat__layout">
+</div>
+
+<!-- chat item -->
+<script type="text/template" id="chatlist_item">
+	<section class="boxwraps">
+  <div data-from="{from}" data-id="{messageId}">
+    <span class="username-box  animate__animated animate__slideInRight animate_delay">
+    <span class="meta chatlog animate__animated animate__slideInRight">
+      <span class="badges">
+      </span>
+      <span class="name">{from}</span>
+    </span>
+		</span>
+	<span class="message-box animate__animated animate__slideInRight">
+    <span class="message">
+      {message}
+    </span>
+    </span>
+  </div>
+  </section>
+</script>

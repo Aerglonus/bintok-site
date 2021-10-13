@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+:root{
+  
+}
+.colon{
+  display:none;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: {background_color};
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+   
+}
+
+
+
+#log {
+    display:;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+}
+
+
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log .meta {
+    vertical-align: top;
+    padding-bottom: 0.1em;
+}
+
+#log .meta {
+  	background-color: #C6ABDE;
+  	width: auto;
+  	text-transform: uppercase;
+ 	 	position: relative;
+  	top: 10px;
+  	border-radius: 15px 15px 15px 15px;
+    padding: 0.5em;
+  	margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  	display: inline-block;
+ 		word-break: break-word;
+  
+}
+
+
+#log .message {
+    text-transform: center;
+  	border-radius: 15px 15px 15px 15px;
+  	padding: 10px 20px;
+   	background: #131213;
+		color: #f7f7f7;
+}
+
+.badges {
+  margin-left: .1em;
+}
+
+.name {
+    margin-left: 0.2em;
+  word-break: break-word;
+}
+.username-box{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  word-break: break-word;
+    --animate-duration: 1.4s;
+	--animate-delay: 0.1s;
+	--animate-repeat: 1;
+}
+.message{
+  position: relative;
+  word-break: break-word;
+}
+.message-box {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  border-radius: 15px;
+  --animate-duration: 1.6s;
+	--animate-delay: 1s;
+	--animate-repeat: 1;
+  
+}
+
+.badges {
+  float: right;
+  position: relative;
+  margin-right: 0.05em;
+  margin-top: 0.20em;
+  margin-left: 0.2em;
+  word-break: break-word;
+  transform: scale(-1,1);
+}
+
+
+.meta {
+  --animate-duration: 1.4s;
+	--animate-delay: 0.5s;
+	--animate-repeat: 1;
+}
+.chatlog{
+  --animate-duration: 1.4s;
+	--animate-delay: 0.5s;
+	--animate-repeat: 1;
+}
+
+
+
+
+.boxwraps {
+  margin-bottom: 0px;
+  padding: 0px 10px;
+  animation:hhslide 1s cubic-bezier(.55,.06,.68,.19) forwards;
+}
+
+@keyframes hhslide {
+  0% {
+    max-height:0px;
+    margin-bottom: 0px;
+  	padding: 0px 10px;
+  }
+  100% {
+    max-height:350px;
+    margin-bottom: 8px;
+  	padding: 5px 10px;
+  }
+}
