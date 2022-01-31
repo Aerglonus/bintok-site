@@ -1,5 +1,5 @@
 <p align="center" style="margin-bottom: 0px !important;">
-  <img width="500" src="img/nervous.jpg"  align="center">
+  <img width="500" src="nervous.jpg"  align="center">
 </p>
 
 # You found the file link nice, now this is one of the secret words
