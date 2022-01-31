@@ -1,4 +1,3 @@
-<!-- ![Tux, the Linux mascot](/assets/img/nervous.jpg) -->
 <p align="center" style="margin-bottom: 0px !important;">
   <img width="500" src="img/nervous.jpg"  align="center">
 </p>
