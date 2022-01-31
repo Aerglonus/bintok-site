@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://github.com/Aerglonus/bintok-site/blob/master/txts/nervous.JPG"/></h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/Aerglonus/bintok-site/master/txts/nervous.JPG"/></h1>
 
 # You found the file link nice, now this is one of the secret words
 
