@@ -41,3 +41,38 @@ a, a:hover, a:visited, a:active {
    #padbox {
 	   padding-bottom: 50px;
    }
+   .fa-star {
+	   animation: fall cubic-bezier(0.1, -0.6, 0.2, 0);
+	   position: absolute;
+	   top: -20px;
+	   color: white;;
+   }
+
+   @keyframes fall {
+	   to {
+		   transform: translateY(105vh);
+	   }
+   }
+
+   #spin {
+	   animation: spinner ease-in-out;
+   }
+
+   @keyframes spinner {
+	   from {
+		   transform: rotate(0deg);
+	   }
+	   25% {
+		   transform: rotate(20deg);
+	   }
+	   50%{
+		   transform: rotate(70deg);
+	   }
+	   75%{
+		   transform: rotate(130deg);
+	   }
+	   100%{
+		   transform: rotate(360deg);
+	   }
+   }
+  
