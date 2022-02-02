@@ -110,7 +110,7 @@ svg {
 	margin-bottom: 100px;
     cursor: pointer;
     z-index: 2;
-    color: #c7c4b8;
+    color: #ffffff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -125,10 +125,10 @@ svg {
     transition: opacity 0.5s;
 }
 .scroll-down.svg .stroke {
-    stroke: #ADA99D;
+    stroke: #ffffff;
 }
 .scroll-down.svg .scroller {
-    fill: #ADA99D;
+    fill: #ffffff;
     -webkit-animation: updown 1s infinite;
     -moz-animation: updown 1s infinite;
     -o-animation: updown 1s infinite;
