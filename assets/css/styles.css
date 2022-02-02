@@ -87,12 +87,10 @@ a:active {
 }
 h1 {
 font-family: Okta Neue;
-
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 5.652rem;
-
 }
 .davetxt {
 padding-top: 70vh;
@@ -195,7 +193,10 @@ svg {
 }
 
 
-
+h3 {
+font-family: Okta Neue;
+font-size: 5.8rem;
+ }
 
 
 

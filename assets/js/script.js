@@ -1,23 +1,26 @@
 setInterval(createSnowFlake, 600);
 
 function myFunction() {
-  const newLocal = "fname";
-  let x = document.forms["myForm"][newLocal].value;
-  if ((x == "definetly_binton", "binton314", "pie")) {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "binton314" || x == "pie" || x == "definetly_binton") {
     window.location = "quest2";
   } else {
-    alert("Wrong answer try again please");
+    alert("not the current answer");
     return false;
   }
 }
 
-function secondFunction() {
-  const newLocal = "dname";
-  let x = document.forms["myForm"][newLocal].value;
-  if (x == "What I want to say is that") {
+function myFun() {
+  let x = document.forms["myForm2"]["dname"].value;
+  if (
+    x == "binton314" ||
+    x == "pie" ||
+    x == "definetly_binton" ||
+    x == "What I want to say is that"
+  ) {
     window.location = "result";
   } else {
-    alert("Wrong answer try again please");
+    alert("not the current answer");
     return false;
   }
 }
