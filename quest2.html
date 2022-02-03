@@ -32,7 +32,7 @@ keep scrolling  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://bintokki.com/assets/css/Navigation-Clean.css" />
     <link rel="stylesheet" href="https://bintokki.com/assets/css/Social-Icons.css" />
-    <link rel="stylesheet" href="https://bintokki.com/assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/Team-Clean.css" />
     <script src="https://kit.fontawesome.com/8d36899c15.js" crossorigin="anonymous"></script>
 </head>
@@ -64,43 +64,46 @@ keep scrolling  -->
                     <div class="col-auto" style="padding-top: 20px">
                         <button type="button"
                             class="btn btn-dark text-center d-flex justify-content-center m-auto btnown"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            onclick="myFun()">
                             Comfirm secret word
                         </button>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form name="myForm2" method="post">
+                                <form name="myForm2" method="POST" id="smt" onkeydown="return event.key != 'Enter';">
                                     <div class="col-auto">
                                         <label for="inputPassword2" class="visually-hidden">Secret
                                             word</label>
                                         <div class="form-floating">
-                                            <input type="submit" class="form-control" id="floatingPassword"
+                                            <input type="password" class="form-control" id="floatingPassword"
                                                 placeholder="Answer" name="dname">
                                             <label for="floatingPassword">secret word</label>
                                             <button type="button" class="btn btn-primary" style="margin-top: 20px;"
-                                                onclick="myFun()">Save
+                                                id="myButton">Save
                                                 changes</button>
                                         </div>
                                     </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <footer></footer>
-    <script src="https://bintokki.com/ssets/js/script.js"></script>
+    <script src="/assets/js/quest2script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://bintokki.com/assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

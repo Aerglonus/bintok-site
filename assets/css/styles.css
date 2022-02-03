@@ -197,7 +197,17 @@ h3 {
 font-family: Okta Neue;
 font-size: 5.8rem;
  }
+ .swal-button--confirm {
+  background-color: #141414;
+}
+.swal-modal{
+    border-radius: 15px;
+}
 
-
-
-
+.swal2-container.swal2-center>.swal2-popup{
+     border-radius: 15px;
+}
+.swalmag {
+    max-width: 160px;
+    border-radius: 50%;
+}

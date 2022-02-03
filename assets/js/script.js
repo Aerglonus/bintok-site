@@ -1,5 +1,12 @@
 setInterval(createSnowFlake, 600);
 
+// $("form").keydown(function (e) {
+//   if (e.keyCode == 13) {
+//     e.preventDefault();
+//     return false;
+//   }
+// });
+
 function myFunction() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "binton314" || x == "pie" || x == "definetly_binton") {
@@ -20,7 +27,13 @@ function myFun() {
   ) {
     window.location = "result";
   } else {
-    alert("not the current answer");
+    swal({
+      title: "Wow!",
+      text: "Message!",
+      type: "success",
+    }).then(function () {
+      window.location = "index.html";
+    });
     return false;
   }
 }
