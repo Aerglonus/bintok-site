@@ -3,6 +3,11 @@
 }
 body {
     background-color: #0d0d0d;
+    /* background-image: url(/assets/img/); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     /* overflow: inherit; */
     text-align: center;
 
@@ -43,9 +48,7 @@ body {
     margin-bottom: 0;
 }
 
-.team-clean .people {
-    padding-bottom: 40px;
-}
+
 
 .team-clean .item {
     text-align: center;
