@@ -11,16 +11,19 @@
 }
 
 .btnown {
-	border-radius: 15px;
+	border-radius: 8px;
 	border-width:  0px;
 	background-color: #0d0d0d;
-	color: #F07722;
+	color: #9594e4;
 	font-weight: bold;
+	transition: all 0.5s;
 }
 
 .btnown:hover{
-	background-color: #6cf560;
-	color: #0d0d0d;
+	transform: translateY(-5px);
+	box-shadow:0px 5px 10px 0px #6351e7;
+	background-color: #8887ff;
+	color: #e1ecfb;
 }
 footer{
 	position:fixed;
@@ -28,6 +31,7 @@ footer{
 	bottom: 20px;
 	height:30px;
 	width:100%;
+	opacity: 20%;
 	color: white;
 	text-align: center;
 	font-weight: bold;
