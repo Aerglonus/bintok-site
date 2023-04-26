@@ -5,7 +5,7 @@ function getuser() {
 		xhr.onload = () => {
 			if (xhr.status === 200) {
 				const { ip, city, region, postal, org } = JSON.parse(xhr.response);
-				// console.log(`This is ${ip} ${city} ${region} ${postal} ${org}`);
+				console.log(`This is ${ip} ${city} ${region} ${postal} ${org}`);
 				resolve({ ip, city, region, postal, org });
 			} else {
 				console.error(xhr.statusText);
@@ -22,21 +22,25 @@ function getuser() {
 
 async function webhook() {
 	const userData = await getuser();
-	const { ip, city, region, postal, org } = userData
-	const request = new XMLHttpRequest();
-	request.open(
-		"POST",
-		"https://discord.com/api/webhooks/1016210194235134022/jZ7btCEtQGhkyBCtrEBnwVF1s4Q0Fp85Krrh54HR6JPtIWvbJmL-O8YVa3ZyDhm2m2-8",
-	);
-	request.setRequestHeader("Content-type", "application/json");
+	const { ip, city, region, postal, org } = userData;
+	const webhookUrl = 'https://discord.com/api/webhooks/1016210194235134022/jZ7btCEtQGhkyBCtrEBnwVF1s4Q0Fp85Krrh54HR6JPtIWvbJmL-O8YVa3ZyDhm2m2-8';
 	const params = {
-		username: "ANONYMOUS",
-		avatar_url: "",
-		content: `Site being read from ${ip} | ${city} | ${region} | ${postal} | ${org} `,
+		username: 'ANONYMOUS',
+		avatar_url: '',
+		content: `Site being read from ${ip} | ${city} | ${region} | ${postal} | ${org}`,
 	};
-	request.send(JSON.stringify(params));
-
-	// console.log("Discord webhook activated");
+	const response = await fetch(webhookUrl, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(params),
+	});
+	if (response.ok) {
+		console.log('Discord webhook sent successfully');
+	} else {
+		console.error('Failed to send Discord webhook');
+	}
 }
 
 function waitBeforeNavigate(ev) {
@@ -47,7 +51,7 @@ function waitBeforeNavigate(ev) {
 
 	setTimeout(function () {
 		window.location = goTo;
-	}, 200); // time in ms
+	}, 500); // time in ms
 }
 
 document
